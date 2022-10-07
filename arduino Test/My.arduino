@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arduino:App xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:arduino="http://www.example.org/arduino">
+  <states name="ON">
+    <action/>
+    <transition next="//@states.1"/>
+  </states>
+  <states name="OFF">
+    <action actuator="//@bricks.1"/>
+    <transition next="//@states.0"/>
+  </states>
+  <bricks xsi:type="arduino:Sensor" name="Button"/>
+  <bricks xsi:type="arduino:Actuator" name="LED"/>
+</arduino:App>
